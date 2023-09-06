@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Authentication Page</title>
+        <link rel="stylesheet" href="UserLogin.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Fresca&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <p>Actually the right username is TechieBytes and password India@123</p>
+        </header>
+        <section class="CheckBox">
+            <h1>Authenticate Yourself</h1>
+            <form action="#" method="post" name="Authentication" id="Authentication" class="Authentication">
+                <label for="username">Enter username:</label>
+                <br>
+                <input type="text" name="username" id="username" minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+" required>
+                <br>
+                <label for="password">Enter Password:</label>
+                <br>
+                <input type="password" name="password" id="password" minlength="8" maxlength="15" pattern="[a-zA-Z0-9]+" required>
+                <br>
+                <input id="sub" type="submit" value="submit" onclick="verify();">
+                <button id="rule" type="button" onclick="show('rules');">Rules</button>
+            </form>
+
+            <div id="rules">
+                <ul>
+                    <li>Username must have between 3 to 15 charcters</li>
+                    <li>Password must have between 8 to 15 charcters</li>
+                    <li>Username and Password required</li>
+                    <li>Use only numbers and letters</li>
+                </ul>
+            </div>
+
+        </section>
+        <script src="UserLogin.js"></script>
+    </body>
+</html>

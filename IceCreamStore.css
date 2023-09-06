@@ -1,0 +1,29 @@
+.container{
+    background-image: url("https://media.istockphoto.com/id/1320678056/photo/variety-of-colorful-summer-frozen-desserts-bottom-border-on-a-rustic-blue-wood-background.jpg?s=1024x1024&w=is&k=20&c=fu0xwEeggk0UMOpFpWf-7P3EoeBalgt9aXCNWgQfMkE=");
+    background-size: auto;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;    
+}
+
+.store{
+    font-family: "Robto";
+    font-size: 45px;
+    text-align: center;
+}
+
+.caption{
+    font-family: "Bree-serif";
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    color: green;
+}
+
+.login-button{
+    text-align: left;
+    background-color: black;
+    color: black;
+    border-radius: 10px;
+    border: none;
+}

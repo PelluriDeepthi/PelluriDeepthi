@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - Products</title>
+    <link rel="stylesheet" href="AddToCart.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Online Store</h1>
+        <nav>
+            <ul>
+                <li><a href="AddToCart.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Product Categories</h2>
+        <ul id="categoryList">
+            <li>
+                <h3>Electronics</h3>
+                <select class="categoryDropdown">
+                    <option value="laptop">Laptop</option>
+                    <option value="phone">Phone</option>
+                    <option value="camera">Camera</option>
+                </select>
+                <button class="addToCart">Add to Cart</button>
+            </li>
+            <li>
+                <h3>Books</h3>
+                <select class="categoryDropdown">
+                    <option value="fiction">Fiction</option>
+                    <option value="nonfiction">Non-Fiction</option>
+                    <option value="selfhelp">Self-Help</option>
+                </select>
+                <button class="addToCart">Add to Cart</button>
+            </li>
+            <li>
+                <h3>Food</h3>
+                <select class="categoryDropdown">
+                    <option value="snacks">Snacks</option>
+                    <option value="beverages">Beverages</option>
+                    <option value="groceries">Groceries</option>
+                </select>
+                <button class="addToCart">Add to Cart</button>
+            </li>
+        </ul>
+    </section>
+
+
+        <section class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cartItems"></ul>
+            <p id="cartItemCount">Items in cart: 0</p>
+            <button id="clearCart">Clear Cart</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Online Store. All rights reserved.</p>
+    </footer>
+
+    <script src="AddToCart.js"></script>
+</body>
+</html>
