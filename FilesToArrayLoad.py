@@ -3,6 +3,7 @@ itemsDataArray = np.loadtxt("C:\\Users\\ADMIN\\Desktop\\Deepu\\ItemDetails.txt",
 itemsDataArrayGen = np.genfromtxt("C:\\Users\\ADMIN\\Desktop\\Deepu\\ItemDetails.txt", dtype=int)
 print("The itemDataArray is:\n", itemsDataArray)
 print("The itemDataArrayGen details is:\n", itemsDataArrayGen)
+# For ex. We can change any value in text file as Nan so In the output we get that particular value as -1
 
 
 # To run this piece of code, we have to add , in the text file
