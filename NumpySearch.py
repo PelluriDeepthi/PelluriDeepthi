@@ -1,0 +1,11 @@
+import numpy as np
+a = np.arange(10, 100, 10)
+print("Array is:", a)
+b = np.where(a == 30)
+print("\nIndex of where 30 is at:", b)
+c = np.where(a % 30 == 0)
+print("\nArray of 30 multiples are:", c)
+d = np.searchsorted(a, 40)
+print("\nThe index of number is at:", d)
+e = np.searchsorted(a, [52, 64, 76, 88])
+print("\nThe index of numbers are at:", e)
