@@ -1,0 +1,17 @@
+def countfreq(mylist):
+    # Creating an empty dictionary
+    freq = {}
+    for item in mylist:
+        if item in freq:
+            freq[item] += 1
+        else:
+                freq[item] = 1
+    for key, value in freq.items():
+        print("%d : %d" % (key, value))
+
+# Driver Function
+if __name__ == "__main__":
+    mylist = [1, 1, 1, 5, 5, 3, 1, 3, 3, 1, 4, 4, 4, 2, 2, 2, 2]
+    countfreq(mylist)
+
+# Output: counts how many times the num is repeated
