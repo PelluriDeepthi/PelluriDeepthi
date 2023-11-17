@@ -1,0 +1,11 @@
+import pandas as pd
+s = pd.Series([10.5, 20, 30, 40.5, 50], index=['a', 'b', 'c', 'd', 'e'], name='Numbers')
+print("The elements in series are:", s)
+print("Array of elements in pandas series are:", s.array)
+print("The shape of pandas series is:", s.shape)
+print("Data type of pandas series is:", s.dtype)
+print("Number of bytes in pandas series is:", s.nbytes)
+print("Memory usuae of pandas series is:", s.memory_usage())
+print("Memory usage of pandas series with index is:", s.memory_usage(index=False))
+print("Size of pandas series are:", s.size)
+print("The name of pandas series are:", s.name)
