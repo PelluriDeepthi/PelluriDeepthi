@@ -1,0 +1,52 @@
+import random
+
+choices = ('r', 'p', 's')
+cPoints = 0
+pPoints = 0
+
+def player():
+    global choices
+    symbol = input("Choose either rock(r), paper(p) or scissors(s).").lower()
+
+    if symbol not in choices:
+        print("You did not enter a valid option.")
+        return player()     #using recursion to get a valid input
+    else:
+        return symbol       #if valid input return the answer
+
+def computer():
+    return random.choice(choices)
+
+def game():
+    global cPoints, pPoints
+    pChoice = player()
+    cChoice = computer()
+    print("The computer has chosen.", cChoice)
+    print("You chose.", pChoice)
+    if pChoice == cChoice:
+        print("It's a tie! No one gets a point.")
+    elif(pChoice == "r" and cChoice == "s") or (pChoice == "s" and cChoice == "p") or (pChoice == "p" and cChoice == "r"):
+        print("You Won!")
+        pPoints += 1
+    else:
+        print("Aww. I Won!")
+        cPoints += 1
+    print()
+
+print("Welcome to Rock Paper and Scissors Game!!!")
+while True:
+    for i in range(5):
+        game()
+    print("Good job!\nYour score is:", pPoints, "\nMy score is:", cPoints)
+    print()
+    again = int(input("Press 1 to continue\nPress 2 to reset and continue\nPress 3 to exit"))
+    if again == 1:
+        continue
+    elif again == 2:
+        pPoints = 0
+        cPoints = 0
+        continue
+    else:
+        break
+
+print("Ok, Bye!")
