@@ -14,3 +14,18 @@ if __name__ == '__main__':
 
     except Exception as ex:
         print(f'Error: {str(ex)}')
+
+
+'''
+Output:
+JSON:-
+[{
+    "Name": "Sunny",
+    "age": "30",
+    "birthyear": "2028"
+}]
+
+CSV:-
+Name	age	birthyear
+Sunny	30	2028
+'''
