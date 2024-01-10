@@ -24,7 +24,7 @@ if __name__ == "__main__":
       deletedFiles.append(f)
       os.remove(f)
     else:
-      haspMap[key] = f
+      hashMap[key] = f
   if len(deletedFiles) != 0:
     print('Deleted Files')
     for i in deletedFiles:
