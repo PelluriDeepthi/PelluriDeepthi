@@ -1,0 +1,14 @@
+
+post - create
+{
+    "name":"john",
+    "email":"john@email.com",
+    "pwd":"dfgdfgdfg"
+}
+
+put - Update
+{
+    "name":"johnUpdated",
+    "email":"johnUpdated@email.com",
+    "pwd":"thhredhth"
+}
